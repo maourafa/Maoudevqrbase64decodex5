@@ -29,8 +29,12 @@
         color: var(--accent-color);
         text-align: center;
         margin: 20px 0;
+        animation: floating 3s ease-in-out infinite;
     }
-
+     label, input, button, textarea {
+            animation: fadeInUp 1.1s ease forwards;
+        }
+        
     h2 {
         border-bottom: 2px solid var(--accent-color);
         padding-bottom: 10px;
@@ -70,7 +74,7 @@
         display: block;
         width: 100%;
         margin: 15px 0;
-        transition: transform 0.2s ease;
+        transition: transform 0.9s ease;
     }
 
     button:hover {
@@ -114,18 +118,19 @@
             min-width: 400px;
             min-height: 400px;
         }
-        .dnt {
+        img.dnt {
         padding: 20px;
         border-radius: 8px;
         margin: 20px auto;
         min-width: 300px;
         min-height: 300px;
-        display: flex;
         justify-content: center;
         align-items: center;
         border: 2px solid var(--accent-color);
         box-shadow: 0 0 15px rgba(0, 206, 209, 0.3);
+        animation: floating 3s ease-in-out infinite;
         }
+        
         #dnt {
         padding: 20px;
         border-radius: 8px;
@@ -150,7 +155,7 @@
     }
 </style>
 <body>
-    <h2>MAOURAFAJS JAWA 🗣️🗣️🔥</h2>
+    <h2>MAOURAFA JS, J nya JAWA 🗣️🗣️🔥</h2>
     <h3>penjelasan penggunaan ! pertama-tama kamu harus scan QR yang diberikan lalu kamu tempel hasil teks nya di sini</h3>
     <label for="inputText">Masukkan Teks Hasil Scan:</label>
     <input type="text" id="inputText">
@@ -163,7 +168,7 @@
     <textarea id="outputText" rows="5" cols="40" readonly></textarea>
     <button onclick="copyToClipboard()">Salin Teks</button>
      <h3>Traktir Admin Kopi</h3>
-     <h1>TERIMAKASIH TELAH MENGGUNAKAN<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" /></h1>
+     <h1 align="center">TERIMAKASIH TELAH MENGGUNAKAN<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" /></h1>
     <br>
     <div align="center">
         <p align="center">
@@ -176,13 +181,13 @@
 
         <p>
             <a href="https://www.instagram.com/maourafa">
-                <img align="left" alt="Instagram" width="21px" src="https://raw.githubusercontent.com/github/explore/06c46459e7947c8a25f72798af696d66e202ac39/topics/instagram/instagram.png" />
+                <img align="left" alt="Instagram" width="35px" src="https://raw.githubusercontent.com/github/explore/06c46459e7947c8a25f72798af696d66e202ac39/topics/instagram/instagram.png" />
             </a>
             <a href="https://youtube.com/@maourafa">
-                <img align="left" alt="Youtube" width="21px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/e94212a487d744cb75e75241cb93716836b2d1e2/images/svg/youtube.svg" />
+                <img align="left" alt="Youtube" width="35px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/e94212a487d744cb75e75241cb93716836b2d1e2/images/svg/youtube.svg" />
             </a>
             <a href="https://x.com/aadmoa">
-                <img align="left" alt="X" width="21px" src="https://avatars.githubusercontent.com/u/50278?s=200&v=4" />
+                <img align="left" alt="X" width="35px" src="https://avatars.githubusercontent.com/u/50278?s=200&v=4" />
             </a>
         </p>
 
@@ -216,11 +221,11 @@
         <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/LICENSE"><img src="https://img.shields.io/github/license/abhisheknaiidu/awesome-github-profile-readme?color=2b9348" alt="License Badge"/></a>
     </p>
      <h2>TRAKTIR KOPI VIA DANA :)</h2>
-    <p align="center"><i>082278687542</i></p>
+    <p align="center"><b><i>082278687542</i></b></p>
 
     <h2>TRAKTIR VIA QRIS :)</h2>
     <p class="dnt">
-        <img src="Tak berjudul14_20250318104203.png" width="450">
+        <img src="Tak berjudul14_20250318104203.png" width="500">
     </p>
     <script>
         function decodeBase64Repeatedly(text, times) {
